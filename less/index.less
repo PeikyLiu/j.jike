@@ -1,0 +1,524 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 0;
+}
+body,html{
+  width: 100%;
+  height: 100%;
+}
+.page-header{
+  height: 60px;
+  .container{
+    width: 1000px;
+    margin: 0 auto;
+    .page-logo{
+      width: 112px;
+      height: 41px;
+      display: inline-block;
+      margin-top: 10px;
+      margin-right: 810px;
+      .page-logo-img{
+        width: 100%;
+      }
+    }
+    .page-login{
+      display: inline-block;
+      line-height: 60px;
+      vertical-align: top;
+      .register{
+        font-size: 13px;
+        color: #333;
+        text-decoration: none;
+        margin-right: 21px;
+        position: relative;
+        &:after{
+          content: '';
+          position: absolute;
+          display: block;
+          width: 1px;
+          height: 12px;
+          background: #333;
+          top: 3px;
+          left: 37px;
+        }
+      }
+      .login{
+        font-size: 13px;
+        color: #333;
+        text-decoration: none;
+      }
+    }
+  }
+}
+.page-mainer{
+  .banner-section{
+    padding-top: 117px;
+    height: 532px;
+    position: relative;
+    background: url(../images/1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    .container{
+      width: 1200px;
+      margin: 0 auto;
+      text-align: center;
+      .banner-title{
+        color: #24adee;
+        font-size: 65px;
+        line-height: 97px;
+        margin-bottom: 33px;
+        font-weight: 600;
+      }
+      .banner-subtitle{
+        font-size: 28px;
+        line-height: 41px;
+        color: #fff;
+        font-weight: 200;
+        margin-bottom: 25px;
+      }
+      .banner-desc{
+        font-size: 18px;
+        line-height: 24px;
+        color: #fff;
+        font-weight: 200;
+        position: relative;
+        &:after{
+          content: '';
+          display: block;
+          position: absolute;
+          left: 543px;
+          top: 90px;
+          width: 0;
+          height: 0;
+          border-top: 25px solid #1a202c;
+          border-left: 45px solid transparent;
+          border-right: 45px solid transparent;
+          z-index: 999;
+        }
+      }
+      .banner-list{
+        position: absolute;
+        display: flex;
+        padding: 0 20px;
+        justify-content: space-between;
+        bottom: -128px;
+        .banner-item{
+          width: 284px;
+          height: 257px;
+          text-align: center;
+          .banner-item-photo{
+            width: 125px;
+            height: 70px;
+            margin: 40px auto 0;
+            background: url(../images/like.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+          .ganhuo{
+            background-position: 34px 0;
+          }
+          .online{
+            background-position: -245px 0;
+          }
+          .task{
+            background-position: -523px 0;
+          }
+          .jiuye{
+            background-position: -801px 0;
+          }
+          .banner-item-title{
+            font-size: 25px;
+            color: #000;
+            margin-top: 15px; 
+            margin-bottom: 25px;
+          }
+          .banner-item-desc{
+            font-size: 18px;
+            line-height: 22px;
+            color: #000;
+            font-weight: 200;
+          }
+        }
+        .one{
+          background: #5dbeec;
+        }
+        .two{
+          background: #40b5ec;
+        }
+        .three{
+          background: #24adee;
+        }
+        .four{
+          background: #1d9fdd;
+        }
+      }
+      .banner-btn{
+        width: 278px;
+        height: 53px;
+        display: block;
+        background: #eb6100;
+        text-align: center;
+        text-decoration: none;
+        position: absolute;
+        color: #fff;
+        font-size: 23px;
+        line-height: 53px;
+        border-radius: 3px;
+        left: 38%;
+        bottom: -203px;
+      }
+    }
+  }
+  .pro-section{
+    padding-top: 283px;
+    padding-bottom: 83px;
+    .container{
+      width: 1200px;
+      margin: 0 auto;
+      text-align: center;
+      .pro-title{
+        font-size: 38px;
+        color: #0e3347;
+        font-weight: 600;
+        margin-bottom: 46px;
+      }
+      .pro-list{
+        .pro-item{
+          width: 1132px;
+          height: 217px;
+          padding-top: 76px;
+          padding-bottom: 44px;
+          text-align: center;
+          margin-bottom: 12px;
+          .pro-item-title{
+            font-size: 57px;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 27px;
+            line-height: 54px;
+            position: relative;
+            &:after{
+              position: absolute;
+              content: '';
+              background: url(../images/arrow.png);
+              background-repeat: no-repeat;
+              background-size: cover;
+              right: 46px;
+              top: 3px;
+              width: 38px;
+              height: 51px;
+            }
+          }
+          .pro-item-desc{
+            font-size: 18px;
+            color: #fff;
+            font-weight: 200;
+          }
+        }
+        .web-qd{
+          background: url(../images/web.png);
+        }
+        .android{
+          background: url(../images/android.png);
+        }
+        .iOS{
+          background: url(../images/iosbg.jpg);
+        }
+        .PHP{
+          background: url(../images/php.png);
+        }
+      }
+    }
+  }
+  .teacher-section{
+    padding-top: 72px;
+    background: url(../images/main_12.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 65px;
+    .container{
+      width: 1200px;
+      margin: 0 auto;
+      text-align: center;
+      .teacher-title{
+        font-size: 38px;
+        line-height: 37px;
+        color: #fff;
+        font-weight: 600;
+        margin-bottom: 107px;
+      }
+      .teacher-list{
+        margin-bottom: 89px;
+        .teacher-item{
+          width: 465px;
+          height: 300px;
+          background: #fff;
+          position: relative;
+          margin-right: 156px;
+          display: inline-block;
+          text-align: left;
+          &:last-child{
+            margin-right: 0px;
+          }
+          .teacher-photo{
+            position: absolute;
+            width: 225px;
+            height: 267px;
+            top: 17px;
+            left: -113px;
+            .teacher-img{
+              width: 225px;
+              height: 267px;
+            }
+          }
+          .teacher-name{
+            padding-left: 153px;
+            font-size: 24px;
+            line-height: 23px;
+            color: #434343;
+            margin-bottom: 21px;
+            padding-top: 40px;
+          }
+          .teacher-info{
+            font-size: 17px;
+            line-height: 17px;
+            margin-bottom: 26px;
+            color: #30a9e1;
+            padding-left: 153px;
+          }
+          .teacher-desc{
+            font-size: 16px;
+            line-height: 26px;
+            color: #434343;
+            padding-left: 153px;
+          }
+        }
+      }
+      .teacher-ring{
+        position: relative;
+        margin-top: 89px;
+        width: 115px;
+        margin-left: 490px;
+        .ring1{
+          width: 10px;
+          height: 10px;
+          display: inline-block;
+          border-radius: 5px;
+          background: #2990bf;
+          margin-right: 42px;
+        }
+        .ring2{
+          width: 10px;
+          height: 10px;
+          display: inline-block;
+          border-radius: 5px;
+          border: 1px solid #2990bf;
+          margin-right: 42px;
+        }
+        .ring3{
+          width: 10px;
+          height: 10px;
+          display: inline-block;
+          border-radius: 5px;
+          border: 1px solid #2990bf;
+        }
+      }
+    }
+  }
+  .evaluate-section{
+    padding: 50px 0 73px;
+    background: #f6f5f6;
+    .container{
+      width: 1200px;
+      margin: 0 auto;
+      text-align: center;
+      .evaluate-title{
+        font-size: 38px;
+        line-height: 37px;
+        color: #0e3347;
+        margin-bottom: 42px;
+        font-weight: 600;
+      }
+      .evaluate-list{
+        .evaluate-item{
+          padding-left: 93px;
+          margin-bottom: 27px;
+          text-align: left;
+          .evaluate-item-person{
+            margin-right: 40px;
+            display: inline-block;
+            text-align: center;
+            .evaluate-item-photo{
+              width: 65px;
+              height: 64px;
+              margin-bottom: 10px;
+            }
+            .evaluate-item-title{
+              font-size: 15px;
+              line-height: 15px;
+              color: #0e3347;
+              margin-bottom: 9px;
+            }
+            .evaluate-item-info{
+              font-size: 13px;
+              color: #909090;
+              line-height: 13px;
+            }
+          }
+          .evaluate-item-desc{
+            width: 925px;
+            height: 108px;
+            border: 1px solid #d8d8d8;
+            font-size: 18px;
+            line-height: 18px;
+            color: #0f6a99;
+            display: inline-block;
+            padding-top: 30px;
+            padding-left: 55px;
+            padding-bottom: 31px;
+            vertical-align: top;
+            border-radius: 3px;
+            position: relative;
+            &:before{
+              content: '';
+              position: absolute;
+              width: 0;
+              height: 0;
+              border: solid transparent; 
+              border-width: 11px;
+              border-right-width: 26px;
+              border-right-color: #d8d8d8;
+              top: 20px;
+              left: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .video-section{
+    padding-top: 43px;
+    padding-bottom: 38px;
+    background: url(../images/10.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    .container{
+      width: 1200px;
+      margin: 0 auto;
+      text-align: center;
+      .video-title{
+        font-size: 38px;
+        line-height: 37px;
+        margin-bottom: 30px;
+        color: #fff;
+      }
+      .video-content{
+        position: relative;
+        width: 723px;
+        height: 407px;
+        margin: 0 auto;
+        video{
+          width: 723px;
+          height: 407px;
+        }
+        .last{
+          position: absolute;
+          background: url(http://j.jikexueyuan.com/Current/home/images/index/arrow1.png?__sprite);
+          top: 168px;
+          left: -133px;
+          display: block;
+          width: 53px;
+          height: 70px;
+        }
+        .next{
+          position: absolute;
+          background: url(http://j.jikexueyuan.com/Current/home/images/index/arrow1.png?__sprite);
+          top: 168px;
+          right: -133px;
+          display: block;
+          width: 53px;
+          height: 70px;
+          background-position: -60px 0;
+        }
+      }
+    }
+  }
+  .faq-section{
+    padding-top: 78px;
+    padding-bottom: 28px;
+    background-color: #fafafa;
+    .container{
+      width: 987px;
+      margin: 0 auto;
+      text-align: center;
+      .faq-head{
+        height: 67px;
+        background: #0f6a99;
+        text-align: left;
+        .faq-photo{
+          display: inline-block;
+          width: 415px;
+          text-align: right;
+          margin-top: 11px;
+          margin-right: 20px;
+        }
+        .faq-title{
+          font-size: 25px;
+          line-height: 67px;
+          color: #fff;
+          font-weight: 200;
+          display: inline-block;
+          vertical-align: top;
+        }
+      }
+      .faq-list{
+        background: #fff;
+        margin-bottom: 25px;
+        .faq-item{
+          padding-left: 97px;
+          text-align: left;
+          padding-top: 23px;
+          padding-bottom: 23px;
+          border-bottom: 1px solid #fafafa;
+          .faq-item-question{
+            font-size: 18px;
+            color: #0f6a99;
+            margin-bottom: 10px;
+          }
+          .faq-item-answer{
+            font-size: 15px;
+            color: #565656;
+          }
+        }
+      }
+      .faq-btn{
+        width: 278px;
+        height: 53px;
+        display: block;
+        margin: 0 auto;
+        color: #fff;
+        text-align: center;
+        text-decoration: none;
+        font-size: 23px;
+        line-height: 53px;
+        background: #eb6100;
+      }
+    }
+  }
+}
+.page-footer{
+  padding-top: 43px;
+  padding-bottom: 47px;
+  border-top: 1px solid #c9c9c9;
+  .container{
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    .page-desc{
+      font-size: 12px;
+      color: #999;
+    }
+  }
+}
